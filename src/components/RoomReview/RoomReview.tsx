@@ -3,7 +3,7 @@ import { FC } from 'react';
 import useSWR from 'swr';
 
 import { Review } from '@/models/review';
-import Rating from '../Rating/Rating';
+
 
 
 const RoomReview: FC<{ roomId: string }> = ({ roomId }) => {
@@ -35,7 +35,7 @@ const RoomReview: FC<{ roomId: string }> = ({ roomId }) => {
             <div className='font-semibold mb-2 flex'>
               <p>{review.user.name}</p>
               <div className='ml-4 flex items-center text-tertiary-light text-lg'>
-                <Rating rating={review.userRating} />
+                {/* <Rating rating={review.userRating} /> */}
               </div>
             </div>
 
