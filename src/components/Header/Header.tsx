@@ -33,7 +33,13 @@ const Header = () => {
                     />
                   </div>
                 ) : (
-                  <FaUserCircle className="cursor-pointer" />
+                  <Image
+                      src='/Image/user.jpg'
+                      alt={session.user.name!}
+                      width={40}
+                      height={40}
+                      className="scale-animation img rounded-full"
+                    />
                 )}
               </Link>
             ) : (
@@ -73,7 +79,7 @@ const Header = () => {
           <Link href="/rooms">Rooms</Link>
         </li>
         <li className="hover:-translate-y-2 duration-500 transition-all">
-          <Link href="/contact">Contact</Link>
+          <Link href="/">Contact</Link>
         </li>
       </ul>
     </header>
